@@ -27,11 +27,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/*Today's Tasks*/}
       <View style={styles.taskWrapper}>
         <Text style={styles.sectionTitle}>Pomme de pain</Text>
          <View style={styles.items}>
-           {/*This is*/}
            {taskItems.map((item, index)=> {
              return (<TouchableOpacity key={index}  onPress={()=> completeTask(index)}>
                <Task text={item}/>
@@ -41,7 +39,6 @@ export default function App() {
       </View>
 
 
-      {/*Write a Tasks*/}
       <KeyboardAvoidingView
         style={styles.writeTaskWrapper}
         behavior={Platform.OS === "ios" ? "padding" : "height"}
