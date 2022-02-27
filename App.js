@@ -28,7 +28,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.taskWrapper}>
-        <Text style={styles.sectionTitle}>Pomme de pain</Text>
+        <Text style={styles.sectionTitle}>Today's tasks</Text>
          <View style={styles.items}>
            {taskItems.map((item, index)=> {
              return (<TouchableOpacity key={index}  onPress={()=> completeTask(index)}>
